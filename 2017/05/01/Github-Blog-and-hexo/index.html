@@ -1,0 +1,534 @@
+
+ <!DOCTYPE HTML>
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Github Blog and hexo | Keep Calm and Carry On</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Xin Su">
+    
+
+    
+    <meta name="description" content="&amp;emsp;&amp;emsp;今天作为五一假期的一天，也由于最近学的命令和知识太多了，所以希望能够找一个平台记录一下。所以第一个技术文章就是怎么搭建这么一套博客。 第一次Github Blog 搭建过程&amp;emsp;&amp;emsp;首先描述第一搭建的过程。 安装git1$ sudo apt-get install git-core 安装Node.js具体方法也可以参照hexo网站这里采用通过nvm的方法进行安">
+<meta name="keywords" content="Blog,hexo,Github">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Github Blog and hexo">
+<meta property="og:url" content="https://suxin5987thu.github.io/2017/05/01/Github-Blog-and-hexo/index.html">
+<meta property="og:site_name" content="Keep Calm and Carry On">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;今天作为五一假期的一天，也由于最近学的命令和知识太多了，所以希望能够找一个平台记录一下。所以第一个技术文章就是怎么搭建这么一套博客。 第一次Github Blog 搭建过程&amp;emsp;&amp;emsp;首先描述第一搭建的过程。 安装git1$ sudo apt-get install git-core 安装Node.js具体方法也可以参照hexo网站这里采用通过nvm的方法进行安">
+<meta property="og:updated_time" content="2017-04-30T17:58:55.593Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Github Blog and hexo">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;今天作为五一假期的一天，也由于最近学的命令和知识太多了，所以希望能够找一个平台记录一下。所以第一个技术文章就是怎么搭建这么一套博客。 第一次Github Blog 搭建过程&amp;emsp;&amp;emsp;首先描述第一搭建的过程。 安装git1$ sudo apt-get install git-core 安装Node.js具体方法也可以参照hexo网站这里采用通过nvm的方法进行安">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Keep Calm and Carry On" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Keep Calm and Carry On" title="Keep Calm and Carry On"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Keep Calm and Carry On">Keep Calm and Carry On</a></h1>
+				<h2 class="blog-motto">Xin Su&#39;s Blog</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:suxin5987thu.github.io">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2017/05/01/Github-Blog-and-hexo/" title="Github Blog and hexo" itemprop="url">Github Blog and hexo</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Xin Su" target="_blank" itemprop="author">Xin Su</a>
+		
+  <p class="article-time">
+    <time datetime="2017-04-30T17:15:40.000Z" itemprop="datePublished"> Published 2017-05-01</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#第一次Github-Blog-搭建过程"><span class="toc-number">1.</span> <span class="toc-text">第一次Github Blog 搭建过程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#安装git"><span class="toc-number">1.0.1.</span> <span class="toc-text">安装git</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装Node-js"><span class="toc-number">1.0.2.</span> <span class="toc-text">安装Node.js</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装hexo"><span class="toc-number">1.0.3.</span> <span class="toc-text">安装hexo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装hexo的服务"><span class="toc-number">1.0.4.</span> <span class="toc-text">安装hexo的服务</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#设置github-pages"><span class="toc-number">1.0.5.</span> <span class="toc-text">设置github pages</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#设置hexo和相关配置"><span class="toc-number">1.0.6.</span> <span class="toc-text">设置hexo和相关配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#在设置好之后，就可以利用hexo相关命令看页面情况了"><span class="toc-number">1.0.7.</span> <span class="toc-text">在设置好之后，就可以利用hexo相关命令看页面情况了</span></a></li></ol></li></ol></li></ol>
+		
+		</div>
+		
+		<p>&emsp;&emsp;今天作为五一假期的一天，也由于最近学的命令和知识太多了，所以希望能够找一个平台记录一下。所以第一个技术文章就是怎么搭建这么一套博客。</p>
+<h2 id="第一次Github-Blog-搭建过程"><a href="#第一次Github-Blog-搭建过程" class="headerlink" title="第一次Github Blog 搭建过程"></a>第一次Github Blog 搭建过程</h2><p>&emsp;&emsp;首先描述第一搭建的过程。</p>
+<h4 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo apt-get install git-core</div></pre></td></tr></table></figure>
+<h4 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h4><p>具体方法也可以参照<a href="https://hexo.io/docs/index.html" target="_blank" rel="external">hexo网站</a><br>这里采用通过nvm的方法进行安装，所以先执行下面命令安装nvm，再由nvm安装Node.js<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | sh</div><div class="line">$ nvm install stable</div></pre></td></tr></table></figure></p>
+<h4 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure>
+<h4 id="安装hexo的服务"><a href="#安装hexo的服务" class="headerlink" title="安装hexo的服务"></a>安装hexo的服务</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> (blog workspace)</div><div class="line">$ npm install hexo-server --save</div><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<h4 id="设置github-pages"><a href="#设置github-pages" class="headerlink" title="设置github pages"></a>设置github pages</h4><p>登录自己的github账号，建立对应的仓库。<br>这里必须要注意名字必须取为(username).github.io<br>注意是必须，否则会无法显示出博客网页。<br>然后在该仓库下创建hexo分支，并且将该分支设置为默认分支</p>
+<h4 id="设置hexo和相关配置"><a href="#设置hexo和相关配置" class="headerlink" title="设置hexo和相关配置"></a>设置hexo和相关配置</h4><p>由于是第一次配置，所以要初始化：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> (blog workspace)</div><div class="line">$ hexo init</div></pre></td></tr></table></figure></p>
+<p>在初始化之后就要配置相关的配置文件：<em>_config.yml</em><br>这里主要要更改deploy选项</p>
+<blockquote>
+<p>deploy:<br>&emsp;type:&ensp;git<br>&emsp;repository:&ensp;git@github.com:Suxin5987THU/Suxin5987THU.github.io.git<br>&emsp;branch:&ensp;master<br>这里注意冒号之后的空格，否则会出错。</p>
+</blockquote>
+<h4 id="在设置好之后，就可以利用hexo相关命令看页面情况了"><a href="#在设置好之后，就可以利用hexo相关命令看页面情况了" class="headerlink" title="在设置好之后，就可以利用hexo相关命令看页面情况了"></a>在设置好之后，就可以利用hexo相关命令看页面情况了</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo g[enerate]  <span class="comment">#渲染静态网页</span></div><div class="line">$ hexo s[erver]    <span class="comment">#打开本地服务器</span></div><div class="line">$ hexo d[eploy]    <span class="comment">#推送到github</span></div></pre></td></tr></table></figure>
+<p>当然相关的文件需要同步到github，主要有以下命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git add -A</div><div class="line">$ git commit -m xxx</div><div class="line">$ git push origin hexo</div></pre></td></tr></table></figure></p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Technology/">Technology</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Blog/">Blog</a><a href="/tags/hexo/">hexo</a><a href="/tags/Github/">Github</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="https://suxin5987thu.github.io/2017/05/01/Github-Blog-and-hexo/" data-title="Github Blog and hexo | Keep Calm and Carry On" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2017/04/30/2017五一草原出游/"  title="2017五一草原出游">
+ <strong>下一篇：</strong><br/> 
+ <span>2017五一草原出游
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#第一次Github-Blog-搭建过程"><span class="toc-number">1.</span> <span class="toc-text">第一次Github Blog 搭建过程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#安装git"><span class="toc-number">1.0.1.</span> <span class="toc-text">安装git</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装Node-js"><span class="toc-number">1.0.2.</span> <span class="toc-text">安装Node.js</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装hexo"><span class="toc-number">1.0.3.</span> <span class="toc-text">安装hexo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装hexo的服务"><span class="toc-number">1.0.4.</span> <span class="toc-text">安装hexo的服务</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#设置github-pages"><span class="toc-number">1.0.5.</span> <span class="toc-text">设置github pages</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#设置hexo和相关配置"><span class="toc-number">1.0.6.</span> <span class="toc-text">设置hexo和相关配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#在设置好之后，就可以利用hexo相关命令看页面情况了"><span class="toc-number">1.0.7.</span> <span class="toc-text">在设置好之后，就可以利用hexo相关命令看页面情况了</span></a></li></ol></li></ol></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+<div class="github-card">
+<p class="asidetitle">Github Card</p>
+<div class="github-card" data-github="Suxin5987THU" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">Categories</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/Life/" title="Life">Life<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Technology/" title="Technology">Technology<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/travel/" title="travel">travel<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Blog/" title="Blog">Blog<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Github/" title="Github">Github<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://github.com" target="_blank" title="Github">Github</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.tsinghua.edu.cn/publish/newthu/index.html" target="_blank" title="Tsinghua">Tsinghua</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">Weibo</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=&dpc=1"></iframe>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Xin Su, a Ph.D condidate in Tsinghua University. <br/>
+			Welcome to my blog. I wish something in the blog could help you.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		
+		<a href="https://github.com/Suxin5987THU" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:suxin5987@qq.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2017 
+		
+		<a href="/about" target="_blank" title="Xin Su">Xin Su</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
